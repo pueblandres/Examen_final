@@ -9,15 +9,15 @@ const Formulario = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //todo: validar email
-    if (nombre.length >= 6) {
-        setError("")
-        setExito(`Gracias ${nombre}, te contactaremos a ${email}`);
-    }else{
-        setError("Por favor chequea que la información sea correcta")
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (nombre.length >= 6 && emailRegex.test(email)) {
+      setError("");
+      setExito(`Gracias ${nombre}, te contactaremos a ${email}`);
+    } else {
+      setError("Por favor, verifica que la información sea correcta");
     }
   };
-
+  
   return (
     <>
     <div className={styles.mensaje}>
