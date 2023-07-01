@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.mensaje {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+}
+
+.exito {
+  color: green;
+}
+
+.form {
+  background: #e3dada;
+  padding: 30px 50px 30px 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  background: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  font-weight: 400;
+}
